@@ -12,7 +12,7 @@ if img1 is None:
 img_gray = cv2.cvtColor(img1,cv2.COLOR_BGR2GRAY)
 
 # write image 
-image_path2 = lesson_folder/"outputs"/"mariogray.png"
+image_path2 = lesson_folder/"outputs"/"totogray.jpg"
 write_sucess = cv2.imwrite(image_path2,img_gray)
 
 if not write_sucess:
