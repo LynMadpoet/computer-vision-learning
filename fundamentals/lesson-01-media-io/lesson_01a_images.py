@@ -4,7 +4,7 @@ import cv2
 #read image
 lesson_folder = Path(__file__).resolve().parent
 image_path1 = lesson_folder/"data"/"toto.jpg"
-img1 = cv2.imread(image_path1)
+img1 = cv2.imread(str(image_path1))
 
 if img1 is None:
     raise FileNotFoundError(f"Image does not exist:{image_path1}")
